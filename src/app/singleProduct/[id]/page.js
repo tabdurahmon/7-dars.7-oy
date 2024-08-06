@@ -32,6 +32,18 @@ const SingleProduct = ({ params }) => {
           {product.title}
         </h1>
         <p className="text-gray-700 mb-4">{product.description}</p>
+        <div className="flex p-3 gap-14">
+          <p className="text-xl font-bold text-gray-800 mb-3">
+            Category: {product.category}
+          </p>
+          <p className="btn text-xl font-bold text-gray-800 mb-3">
+            Rating: {product.rating}
+          </p>
+          <p className="text-xl font-bold text-gray-800 mb-3">
+            Brand: {product.brand}
+          </p>
+        </div>
+
         <span className="text-2xl font-bold text-gray-800">
           ${product.price}
         </span>
