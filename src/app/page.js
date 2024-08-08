@@ -11,6 +11,7 @@ async function Home() {
   const { data } = await getData();
   return (
     <div className="min-h-screen bg-gray-100  p-6">
+      <Navbar />;
       <h1 className="text-4xl font-bold mb-10 text-center text-gray-800">
         Products
       </h1>

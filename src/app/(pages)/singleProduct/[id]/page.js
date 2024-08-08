@@ -20,6 +20,8 @@ const SingleProduct = ({ params }) => {
     }
   }, [id]);
 
+  if (!product) return <div>Loading...</div>;
+
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="bg-white p-6 rounded-lg shadow-lg">
